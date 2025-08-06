@@ -1,32 +1,25 @@
 ---
-layout: default
+layout: main
 title: Home
 ---
 
-<h2>Welcome!</h2>
-<p>
-    Hi! I'm SgtSwagrid, a developer passionate about open source projects and web development.
-    Welcome to my blog where I share my thoughts and projects.
-</p>
+<div class="grid">
 
-<h2>Recent Posts</h2>
-{% if site.posts.size > 0 %}
-    <ul class="post-list">
-        {% for post in site.posts limit:5 %}
-        <li>
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
-            <p>{{ post.excerpt }}</p>
-        </li>
-        {% endfor %}
-    </ul>
-    <p><a href="{{ "/blog" | relative_url }}">View all posts &rarr;</a></p>
-{% else %}
-    <p>No posts yet. Check back soon!</p>
-{% endif %}
-
-<h2>Projects</h2>
-<ul>
-    <li><a href="https://github.com/SgtSwagrid/project1" target="_blank">Project 1</a></li>
-    <li><a href="https://github.com/SgtSwagrid/project2" target="_blank">Project 2</a></li>
-</ul>
+    <div>
+        <h2>Posts</h2>
+        {% if site.posts.size > 0 %}
+            <ul class="post-list">
+                {% for post in site.posts limit:5 %}
+                <li>
+                    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+                    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+                    <p>{{ post.excerpt }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+            <p><a href="{{ '/posts' | relative_url }}">View all posts &rarr;</a></p>
+        {% else %}
+            <p>No posts yet. Check back soon!</p>
+        {% endif %}
+    </div>
+</div>

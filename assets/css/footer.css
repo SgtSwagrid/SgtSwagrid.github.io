@@ -1,0 +1,51 @@
+body > footer {
+
+    background-color: var(--pico-card-border-color);
+    height: var(--footer-height);
+    padding: var(--footer-padding);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+
+    @media (max-width: 600px) {
+        .copyright {
+            display: none;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+        }
+    }
+
+    @media (min-width: 601px) {
+        .copyright {
+            display: inline-flex;
+        }
+        .social-links {
+            float: right;
+        }
+    }
+}
+
+:root {
+    @media (max-width: 600px) {
+        --footer-height: 50px;
+        --footer-padding: 10px 20px;
+    }
+
+    @media (min-width: 601px) {
+        --footer-height: 75px;
+        --footer-padding: 20px 60px;
+    }
+}
+
+.icon svg path {
+    fill: var(--icon);
+}
+
+.icon:hover svg path {
+    fill: var(--icon-hover);
+}
+

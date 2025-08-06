@@ -7,6 +7,8 @@ author: SgtSwagrid
 excerpt: "Tips and insights for developers looking to contribute to open source projects for the first time."
 ---
 
+This post is automatically generated to test the website features.
+
 # Getting Started with Open Source Development
 
 Contributing to open source projects can be one of the most rewarding experiences for a developer. Not only do you get to work on projects you're passionate about, but you also learn from other developers and give back to the community.

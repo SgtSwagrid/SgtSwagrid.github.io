@@ -1,0 +1,30 @@
+@import url('colours.css');
+@import url('header.css');
+@import url('footer.css');
+@import url('links.css');
+@import url('tooltip.css');
+@import url('tables.css');
+@import url('cards.css');
+
+:root {
+    --main-vpadding: 25px;
+    --main-hpadding: 60px;
+    --max-width: 1400px;
+}
+
+body > main {
+
+    margin: var(--header-height) 0 var(--footer-height) 0;
+    padding-block: 0px;
+    width: 100%;
+
+    & > div {
+        margin: auto;
+        width: 100%;
+        max-width: var(--max-width);
+        min-height: calc(100vh - var(--header-height) - var(--footer-height) - 2*var(--main-vpadding));
+        padding: var(--main-vpadding) var(--main-hpadding);
+        display: grid;
+        place-items: center;
+    }
+}

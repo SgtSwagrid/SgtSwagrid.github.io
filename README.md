@@ -30,7 +30,7 @@ The source code for my [personal website](https://alecdorrington.com/).
 
 ## Deployment
 
-This site is automatically deployed when you push to the `main` branch.
+This site is automatically deployed from the `main` branch.
 
 ## Tools
 

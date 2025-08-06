@@ -1,0 +1,9 @@
+.card {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--card);
+    border: 2px var(--card-outline) solid;
+    border-radius: 5px;
+    width: 100%;
+}

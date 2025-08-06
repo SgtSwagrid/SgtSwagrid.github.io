@@ -1,0 +1,15 @@
+:root {
+    --header: var(--pico-card-border-color);
+    --card: var(--pico-card-background-color);
+    --card-outline: #2f3640;
+    --title: #fed330;
+    --subtitle: #778ca3;
+    --link: #2bcbba;
+    --link-visited: #2bcbba;
+    --link-hover: #20bf6b;
+    --link-active: #778ca3;
+    --tooltip-text: #f5f6fa;
+    --tooltip-background: #1e272e;
+    --icon: #7f8fa6;
+    --icon-hover: #f5f6fa;
+}

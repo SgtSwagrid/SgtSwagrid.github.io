@@ -7,6 +7,8 @@ author: SgtSwagrid
 excerpt: "My first post on this new Jekyll blog. Learn about the setup and what's coming next!"
 ---
 
+This post is automatically generated to test the website features.
+
 # Welcome to My Jekyll Blog!
 
 I'm excited to launch this new Jekyll-powered blog! This is my first post, and I wanted to share what led me to create this space and what you can expect going forward.

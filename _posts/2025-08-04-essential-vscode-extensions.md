@@ -7,6 +7,8 @@ author: SgtSwagrid
 excerpt: "Boost your productivity with these must-have VS Code extensions for web development."
 ---
 
+This post is automatically generated to test the website features.
+
 # 5 Essential VS Code Extensions for Web Development
 
 As a web developer, having the right tools can significantly boost your productivity. VS Code is already an excellent editor, but with the right extensions, it becomes even more powerful. Here are my top 5 essential extensions for web development.

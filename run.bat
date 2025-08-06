@@ -1,1 +1,1 @@
-bundle exec jekyll serve --livereload --force_polling
+bundle exec jekyll serve --livereload --force_polling --host localhost --port 4000
