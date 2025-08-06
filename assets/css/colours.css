@@ -1,6 +1,6 @@
 :root {
     --header: var(--pico-card-border-color);
-    --card: var(--pico-card-background-color);
+    --card: #1c202a;
     --card-outline: #2f3640;
     --title: #fed330;
     --subtitle: #778ca3;
