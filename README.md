@@ -1,64 +1,38 @@
-# SgtSwagrid's Blog
+# Alec's Personal Website
 
-A Jekyll-powered blog hosted on GitHub Pages.
+The source code for my [personal website](https://alecdorrington.com/).
 
-## Setup for Local Development
+## Writing a New Post
 
-1. **Install Ruby and Jekyll**
-   ```bash
-   gem install jekyll bundler
-   ```
-
-2. **Clone this repository**
-   ```bash
-   git clone https://github.com/SgtSwagrid/SgtSwagrid.github.io.git
-   cd SgtSwagrid.github.io
-   ```
-
-3. **Install dependencies**
-   ```bash
-   bundle install
-   ```
-
-4. **Serve the site locally**
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-5. **Open your browser**
-   Navigate to `http://localhost:4000`
-
-## Adding New Posts
-
-1. Create a new file in the `_posts` directory
-2. Name it using the format: `YYYY-MM-DD-title-of-post.md`
-3. Add the required front matter:
+1. Create a new file in [_posts](_posts/).
+2. Name it according to `YYYY-MM-DD-title-of-post.md`.
+3. Add the following preamble:
    ```yaml
    ---
    layout: post
-   title: "Your Post Title"
+   title: "Title of Post"
    date: YYYY-MM-DD HH:MM:SS -0000
    categories: category1 category2
-   author: SgtSwagrid
-   excerpt: "A brief description of your post"
+   author: Your Name
+   excerpt: "A brief description"
    ---
    ```
-4. Write your content in Markdown below the front matter
-5. Commit and push to GitHub - the site will automatically update!
+4. Write the content in [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+5. Commit and push.
 
-## Customization
+## Local Execution
 
-- **Site settings**: Edit `_config.yml`
-- **Styling**: Modify the CSS in `_layouts/default.html`
-- **Navigation**: Update the nav section in `_layouts/default.html`
-- **About page**: Edit `about.html`
+1. Install [Ruby](https://www.ruby-lang.org/en/).
+2. Clone the repository `git clone https://github.com/SgtSwagrid/SgtSwagrid.github.io`.
+3. Navigate to directory `SgtSwagrid.github.io/`
+4. (Windows Only) Run `setup` (first time) then `run`.
+5. Open [localhost:4000](http://localhost:4000/) in your browser.
 
 ## Deployment
 
-This site is automatically deployed to GitHub Pages when you push to the `main` branch. No additional setup required!
+This site is automatically deployed when you push to the `main` branch.
 
-## Built With
+## Tools
 
-- [Jekyll](https://jekyllrb.com/) - Static site generator
-- [GitHub Pages](https://pages.github.com/) - Hosting platform
-- Custom CSS for styling
+- [Jekyll](https://jekyllrb.com/) for static site generation.
+- [GitHub Pages](https://pages.github.com/) for hosting.
