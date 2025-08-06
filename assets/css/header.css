@@ -45,13 +45,18 @@ body > header {
             margin-top: 26px;
             float: right;
         }
+
+        * {
+            padding: none;
+            margin: none;
+        }
     }
 }
 
 :root {
     @media (max-width: 600px) {
-        --header-height: 75px;
-        --header-padding: 15px 20px;
+        --header-height: 50px;
+        --header-padding: 3px 20px;
     }
 
     @media (min-width: 601px) {

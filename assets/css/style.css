@@ -26,5 +26,16 @@ body > main {
         padding: var(--main-vpadding) var(--main-hpadding);
         display: grid;
         place-items: center;
+        padding: var(--body-padding);
+    }
+}
+
+:root {
+    @media (max-width: 600px) {
+        --body-padding: 10px;
+    }
+
+    @media (min-width: 601px) {
+        --body-padding: 40px;
     }
 }

@@ -33,11 +33,13 @@ body > footer {
     @media (max-width: 600px) {
         --footer-height: 50px;
         --footer-padding: 10px 20px;
+        --footer-icon-spacing: 20px;
     }
 
     @media (min-width: 601px) {
         --footer-height: 75px;
         --footer-padding: 20px 60px;
+        --footer-icon-spacing: 10px;
     }
 }
 

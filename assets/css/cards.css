@@ -1,9 +1,19 @@
 .card {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: var(--card-padding);
     background-color: var(--card);
     border: 2px var(--card-outline) solid;
     border-radius: 5px;
     width: 100%;
+}
+
+:root {
+    @media (max-width: 600px) {
+        --card-padding: 20px 5px;
+    }
+
+    @media (min-width: 601px) {
+        --card-padding: 20px;
+    }
 }
