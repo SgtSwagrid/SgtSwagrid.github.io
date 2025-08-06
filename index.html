@@ -1,54 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>SgtSwagrid's GitHub Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2em;
-            background: #f9f9f9;
-            color: #222;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 2em;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        main {
-            max-width: 600px;
-            margin: auto;
-            background: #fff;
-            padding: 2em;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Welcome to SgtSwagrid's GitHub Page</h1>
-        <p>
-            <a href="https://github.com/SgtSwagrid" target="_blank">Visit my GitHub profile</a>
-        </p>
-    </header>
-    <main>
-        <h2>About Me</h2>
-        <p>
-            Hi! I'm SgtSwagrid, a developer passionate about open source projects and web development.
-        </p>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/SgtSwagrid/project1" target="_blank">Project 1</a></li>
-            <li><a href="https://github.com/SgtSwagrid/project2" target="_blank">Project 2</a></li>
-        </ul>
-    </main>
-</body>
-</html>
+---
+layout: default
+title: Home
+---
+
+<h2>Welcome!</h2>
+<p>
+    Hi! I'm SgtSwagrid, a developer passionate about open source projects and web development.
+    Welcome to my blog where I share my thoughts and projects.
+</p>
+
+<h2>Recent Posts</h2>
+{% if site.posts.size > 0 %}
+    <ul class="post-list">
+        {% for post in site.posts limit:5 %}
+        <li>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+            <p>{{ post.excerpt }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+    <p><a href="{{ "/blog" | relative_url }}">View all posts &rarr;</a></p>
+{% else %}
+    <p>No posts yet. Check back soon!</p>
+{% endif %}
+
+<h2>Projects</h2>
+<ul>
+    <li><a href="https://github.com/SgtSwagrid/project1" target="_blank">Project 1</a></li>
+    <li><a href="https://github.com/SgtSwagrid/project2" target="_blank">Project 2</a></li>
+</ul>
