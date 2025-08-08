@@ -1,4 +1,4 @@
-# Alec's Personal Website
+# alecdorrington.com
 
 The source code for my [personal website](https://alecdorrington.com/).
 
