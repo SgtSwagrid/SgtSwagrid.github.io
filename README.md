@@ -21,11 +21,12 @@ The source code for my [personal website](https://alecdorrington.com/).
 5. Commit and push.
 
 ## Local Execution
+#### Windows Only
 
 1. Install [Ruby](https://www.ruby-lang.org/en/).
 2. Clone the repository `git clone https://github.com/SgtSwagrid/SgtSwagrid.github.io`.
 3. Navigate to directory `SgtSwagrid.github.io/`
-4. (Windows only) Run `setup` (first time) then `run`.
+4. Run `setup` (first time) then `run`.
 5. Open [localhost:4000](http://localhost:4000/) in your browser.
 
 ## Deployment
