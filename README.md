@@ -23,7 +23,7 @@ The source code for my [personal website](https://alecdorrington.com/).
 ## Local Execution
 #### Windows Only
 
-1. Install [Ruby](https://www.ruby-lang.org/en/).
+1. Install [Ruby](https://www.ruby-lang.org/en/) and [Bundler](https://bundler.io/).
 2. Clone the repository `git clone https://github.com/SgtSwagrid/SgtSwagrid.github.io`.
 3. Navigate to directory `SgtSwagrid.github.io/`
 4. Run `setup` (first time) then `run`.
