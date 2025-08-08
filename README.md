@@ -11,7 +11,6 @@ The source code for my [personal website](https://alecdorrington.com/).
    ```bash
    git clone https://github.com/SgtSwagrid/SgtSwagrid.github.io
    ```
-3. Navigate to directory `SgtSwagrid.github.io/`.
 4. Run `setup` (first time) then `run`.
 5. Open [localhost:4000](http://localhost:4000/) in your browser.
 
