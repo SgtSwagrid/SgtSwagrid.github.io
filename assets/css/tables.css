@@ -6,29 +6,42 @@ ul {
 li {
     margin: var(--row-margin) 0;
     padding-left: var(--row-ident);
+    font-size: var(--outer-font-size);
+}
+
+li > h6 {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: var(--header-font-size);
 }
 
 li > ul {
-    margin: 0;
+    margin: 10px 0 0 0;
 }
 
 li > ul > li {
-    font-size: 16px;
     margin: 0;
+    font-size: var(--inner-font-size);
 }
 
 :root {
-    @media (max-width: 600px) {
+    @media (max-width: 1200px) {
         --table-margin: 0px;
         --table-indent: 20px;
         --row-margin: 15px;
         --row-indent: 0px;
+        --header-font-size: 20px;
+        --outer-font-size: 18px;
+        --inner-font-size: 14px;
     }
 
-    @media (min-width: 601px) {
+    @media (min-width: 1201px) {
         --table-margin: 5px;
         --table-indent: 25px;
         --row-margin: 20px;
         --row-indent: 5px;
+        --header-font-size: 24px;
+        --outer-font-size: 20px;
+        --inner-font-size: 16px;
     }
 }

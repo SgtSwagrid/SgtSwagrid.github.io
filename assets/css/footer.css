@@ -8,7 +8,7 @@ body > footer {
     bottom: 0;
     z-index: 100;
 
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
         .copyright {
             display: none;
         }
@@ -19,7 +19,7 @@ body > footer {
         }
     }
 
-    @media (min-width: 601px) {
+    @media (min-width: 901px) {
         .copyright {
             display: inline-flex;
         }
@@ -30,13 +30,13 @@ body > footer {
 }
 
 :root {
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
         --footer-height: 50px;
         --footer-padding: 10px 20px;
         --footer-icon-spacing: 20px;
     }
 
-    @media (min-width: 601px) {
+    @media (min-width: 901px) {
         --footer-height: 75px;
         --footer-padding: 20px 60px;
         --footer-icon-spacing: 10px;
