@@ -3,11 +3,20 @@
 <html lang="en", data-theme="dark">
 
     <head>
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
         <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
         <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+        <!-- Open Graph tags for content embeds. -->
+        <meta property="og:title" content="&lt;Made by Alec/&gt;" />
+        <meta property="og:description" content="Adventures, mountains, computer science, and me." />
+        <meta property="og:image" content="https://www.alecdorrington.com/assets/preview.png" />
+        <meta property="og:url" content="https://www.alecdorrington.com/" />
+        <meta property="og:type" content="website" />
+
     </head>
 
     <body>
