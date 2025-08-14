@@ -1,57 +1,99 @@
-.card {
-    display: flex;
-    justify-content: center;
-    padding: var(--card-padding);
-    background-color: var(--card);
-    border: 2px var(--card-outline) solid;
-    border-radius: 10px;
-    width: 100%;
-    max-width: var(--card-max-width);
-}
-
-.img-card {
-    padding: 0 0 0 0;
-    background-color: var(--card);
-    border: 2px var(--card-outline) solid;
-    border-radius: 10px;
-    width: 100%;
-    max-width: var(--card-max-width);
-
-    & > img {
-        object-fit: contain;
-        border-radius: 9px 9px 0 0;
-        float: top;
-        width: 100%;
-        height: auto;
-        border-bottom: 2px var(--card-outline) solid;
-    }
-}
-
-/*.grid {
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    gap: 1rem;
-    justify-content: center;
-    align-content: center;
-    margin: 0px;
-}*/
-
 :root {
+
+    --card-border-thickness: 0px;
+    --card-border-radius: 10px;
+
     @media (max-width: 900px) {
+        --table-columns: 1;
+        --table-gap: 10px;
         --card-padding: 20px 5px;
+        --cards-max-width: 550px;
+        --card-header-min-height: 50px;
     }
 
-    @media (min-width: 901px) {
+    @media (min-width: 901px) and (max-width: 1400px) {
+        --table-columns: 2;
+        --table-gap: 20px;
         --card-padding: 20px;
+        --cards-max-width: 1100px;
+        --card-header-min-height: 65px;
     }
 
-    @media (max-width: 1200px) {
-        --columns: 1;
-        --card-max-width: 600px;
+    @media (min-width: 1401px) {
+        --table-columns: 3;
+        --table-gap: 30px;
+        --card-padding: 20px;
+        --cards-max-width: 2000px;
+        --card-header-min-height: 80px;
     }
+}
 
-    @media (min-width: 1201px) {
-        --columns: 2;
-        --card-max-width: 1000px;
+.cards {
+    
+    width: 100%;
+    height: 100%;
+    max-width: var(--cards-max-width);
+
+    /* Grid */
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: var(--table-gap);
+    grid-template-columns: repeat(var(--table-columns), minmax(var(--table-gap), 1fr));
+
+    & > .card {
+
+        width: 100%;
+        height: 100%;
+
+        /* Style */
+        background-color: var(--card);
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+        border: var(--card-border-thickness) var(--card-border) solid;
+        border-radius: var(--card-border-radius);
+
+        /* Fill all available space with body */
+        display: flex;
+        flex-direction: column;
+
+        & > .card-header {
+
+            /* Positioning */
+            top: 0;
+            width: 100%;
+            height: min-content;
+            min-height: var(--card-header-min-height);
+
+            /* Grid */
+            display: grid;
+            place-content: center;
+
+            /* Style */
+            background-color: var(--card-header);
+            box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.1);
+            border-bottom: var(--card-border-thickness) var(--card-border) solid;
+            border-radius: calc(var(--card-border-radius) - var(--card-border-thickness)) calc(var(--card-border-radius) - var(--card-border-thickness)) 0 0;
+        
+            * {
+                color: var(--card-title);
+            }
+        }
+
+        & > .card-body {
+
+            /* Positioning */
+            width: 100%;
+            height: min-content;
+            padding: var(--card-padding);
+            flex: 1;
+
+            /* Grid */
+            display: grid;
+            place-content: center;
+
+            /* Style */
+            border-radius: 0 0 calc(var(--card-border-radius) - var(--card-border-thickness)) calc(var(--card-border-radius) - var(--card-border-thickness));
+            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.05) inset;
+        }
     }
 }

@@ -1,25 +1,26 @@
+:root {
+    @media (max-width: 900px) {
+        --header-height: 50px;
+    }
+
+    @media (min-width: 901px) {
+        --header-height: 100px;
+    }
+}
+
 body > header {
 
-    background-color: var(--pico-card-border-color);
-    height: var(--header-height);
-    padding: var(--header-padding);
+    /* Position and size */
     width: 100%;
+    height: var(--header-height);
     position: fixed;
     top: 0;
+    padding: 0;
     z-index: 101;
 
-    .title {
-        color: var(--title);
-        margin-bottom: 5px;
-    }
-
-    .subtitle {
-        color: var(--subtitle);
-        font-size: 18px;
-        @media (max-width: 900px) {
-            display: none;
-        }
-    }
+    /* Style */
+    background-color: var(--header);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
 
     .logo {
 
@@ -29,20 +30,32 @@ body > header {
 
         @media (min-width: 901px) {
             float: left;
+            margin: 19px 0 0 60px;
+        }
+
+        .title {
+            color: var(--title);
+            font-size: 24pt;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--subtitle);
+            font-size: 18px;
         }
     }
 
     .navigation {
 
         @media (max-width: 900px) {
-            margin-top: 12px;
+            margin-top: 10px;
             display: flex;
             justify-content: center; 
             align-items: center;
         }
 
         @media (min-width: 901px) {
-            margin-top: 26px;
+            margin: 32px 60px 0 0;
             float: right;
         }
 
@@ -50,17 +63,26 @@ body > header {
             padding: none;
             margin: none;
         }
-    }
-}
 
-:root {
-    @media (max-width: 900px) {
-        --header-height: 50px;
-        --header-padding: 3px 20px;
-    }
+        a {
 
-    @media (min-width: 901px) {
-        --header-height: 100px;
-        --header-padding: 10px 60px;
+            text-decoration: none;
+
+            &:link {
+                color: var(--navbar);
+            }
+
+            &:visited {
+                color: var(--navbar);
+            }
+            
+            &:hover {
+                color: var(--navbar-hover);
+            }
+
+            &:active {
+                color: var(--navbar-active);
+            }
+        }
     }
 }

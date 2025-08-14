@@ -1,41 +1,71 @@
 @import url('colours.css');
 @import url('header.css');
 @import url('footer.css');
-@import url('links.css');
 @import url('tooltip.css');
 @import url('tables.css');
 @import url('cards.css');
+@import url('text.css');
 
 :root {
-    --main-vpadding: 25px;
-    --main-hpadding: 60px;
-    --max-width: 1600px;
-}
+    
+    --content-max-width: 1800px;
 
-body > main {
-
-    margin: var(--header-height) 0 var(--footer-height) 0;
-    padding-block: 0px;
-    width: 100%;
-
-    & > div {
-        margin: auto;
-        width: 100%;
-        max-width: var(--max-width);
-        min-height: calc(100vh - var(--header-height) - var(--footer-height) - 2*var(--main-vpadding));
-        padding: var(--main-vpadding) var(--main-hpadding);
-        display: grid;
-        place-items: center;
-        padding: var(--body-padding);
-    }
-}
-
-:root {
     @media (max-width: 900px) {
-        --body-padding: 10px;
+        --content-vpadding: 10px;
+        --content-hpadding: 10px;
     }
 
     @media (min-width: 901px) {
-        --body-padding: 40px;
+        --content-vpadding: 25px;
+        --content-hpadding: 60px;
+    }
+}
+
+* {
+    color: var(--text);
+}
+
+body {
+
+    background-color: var(--background);
+
+    /* Disable global scrolling */
+    overflow: hidden;
+
+    & > main {
+
+        /* Fill all space between the header and footer */
+        width: 100vw;
+        height: 100vh;
+        padding: var(--header-height) 0 var(--footer-height) 0;
+
+        & > .root {
+
+            width: 100%;
+            height: 100%;
+            
+            /* Scrollable region */
+            overflow: auto;
+
+            /* Horizontally centre contents */
+            display: grid;
+            justify-items: center;
+
+            & > div {
+                
+                width: 100%;
+
+                /* Match the scrollable height to the content, unless the content is shorter than the viewport */
+                height: min-content;
+                min-height: 100%;
+
+                display: grid;
+                place-items: center;
+
+                /* Margins */
+                padding: var(--content-vpadding) var(--content-hpadding);
+                max-width: var(--content-max-width);
+            }
+        }
     }
 }

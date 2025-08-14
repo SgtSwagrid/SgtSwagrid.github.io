@@ -1,15 +1,31 @@
 :root {
-    --header: var(--pico-card-border-color);
-    --card: #1c202a;
-    --card-outline: #2f3640;
-    --title: #fed330;
-    --subtitle: #778ca3;
-    --link: #2bcbba;
-    --link-visited: #2bcbba;
+
+    --background: #1B2228;
+    --header: #2C595E;
+
+    --card: #403E39;
+    --card-bottom: #3d3b36;
+    --card-border: #105E60;
+    --card-header: #54463A;
+    --card-title: #d2dae2;
+
+    --title: #f5f6fa;
+    --subtitle: #f5f6fa;
+    --title-emphasis: #fad390;
+
+    --text: #d2dae2;
+
+    --link: #76ABAE;
     --link-hover: #20bf6b;
     --link-active: #778ca3;
+
+    --navbar: #E6F5FF;
+    --navbar-hover: #20bf6b;
+    --navbar-active: #778ca3;
+
     --tooltip-text: #f5f6fa;
     --tooltip-background: #1e272e;
-    --icon: #7f8fa6;
+
+    --icon: #76ABAE;
     --icon-hover: #f5f6fa;
 }

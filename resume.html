@@ -3,71 +3,159 @@ layout: main
 title: Résumé
 ---
 
-<div class="grid" style="width: 100%">
-    <!--<div class="img-card">
-        <img src="/assets/images/portrait.jpg">
-    </div>-->
+<div class="cards">
+
     <div class="card">
-        <div style="max-width: 550px;">
-            <h2 style="text-align: center;">Education</h2>
+        <img class="card-header" src="/assets/images/portrait.jpg">
+        <div class="card-body">
+            <div>
+                <h6>
+                    {% include svg/name.svg %}
+                    <small style="margin-left: 10px;">
+                        Alec Dorrington
+                    </small>
+                </h6>
+                <h6>
+                    {% include svg/job.svg %}
+                    <small style="margin-left: 10px;">
+                        Computer Scientist
+                    </small>
+                </h6>
+                <h6>
+                    {% include svg/location.svg %}
+                    <small style="margin-left: 10px;">
+                        <a target="_blank" href="https://www.google.com/maps/place/Zürich/">Zürich</a>,&nbsp;Switzerland <span style="font-size: 8pt">(originally&nbsp;Australia)</span>
+                    </small>
+                </h6>
+                <h6>
+                    {% include svg/email.svg %}
+                    <small style="margin-left: 10px;">
+                        <a target="_blank" href="mailto:me@alecdorrington.com">me@alecdorrington.com</a>
+                    </small>
+                </h6>
+                <h6>
+                    {% include svg/github.svg %}
+                    <small style="margin-left: 10px;">
+                        github.com/<a target="_blank" href="https://github.com/SgtSwagrid">SgtSwagrid</a>
+                    </small>
+                </h6>
+            </div>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h2>Education</h2>
+        </div>
+        <div class="card-body">
             <ul>
                 <li>
-                    <h6><strong><a href="https://ethz.ch/en.html">ETH Zürich</a></strong> <small>(2023&nbsp;&#8209;&nbsp;2025)</small></h6>
-                    Master of <a href="https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/computer-science.html">Computer Science</a>
+                    <h6><strong><a target="_blank"href="https://ethz.ch/en.html">ETH Zürich</a></strong> <small>(2023&nbsp;&#8209;&nbsp;2025)</small></h6>
+                    Master of <a target="_blank" href="https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/computer-science.html">Computer Science</a>
                     <ul>
-                        <li>Major in <a href="https://en.wikipedia.org/wiki/Theoretical_computer_science">Theoretical</a>&nbsp;Computer&nbsp;Science</li>
-                        <li>Minor in Machine&nbsp;<a href="https://en.wikipedia.org/wiki/Artificial_intelligence">Learning</a></li>
-                        <li>Thesis in Combinatorial&nbsp;<a href="https://en.wikipedia.org/wiki/Combinatorial_optimization">Optimisation</a> with <a href="https://www.ivt.ethz.ch/en/">IVT</a></li>
+                        <li>Major in <a target="_blank" href="https://en.wikipedia.org/wiki/Theoretical_computer_science">Theoretical</a>&nbsp;Computer&nbsp;Science</li>
+                        <li>Minor in Machine&nbsp;<a target="_blank" href="https://en.wikipedia.org/wiki/Artificial_intelligence">Learning</a></li>
+                        <li>Thesis in Combinatorial&nbsp;<a target="_blank"href="https://en.wikipedia.org/wiki/Combinatorial_optimization">Optimisation</a> with <a target="_blank" href="https://www.ivt.ethz.ch/en/">IVT</a></li>
                     </ul>
                 </li>
                 <li>
-                    <h6><strong><a href="https://www.curtin.edu.au/">Curtin University</a></strong> <small>(2018&nbsp;&#8209;&nbsp;2021)</small></h6>
-                    Bachelor of <a href="https://www.curtin.edu.au/study/offering/course-ug-bachelor-of-advanced-science-honours--bh-advsci/">Advanced Science</a>
+                    <h6><strong><a target="_blank" href="https://www.curtin.edu.au/">Curtin University</a></strong> <small>(2018&nbsp;&#8209;&nbsp;2021)</small></h6>
+                    Bachelor of <a target="_blank" href="https://www.curtin.edu.au/study/offering/course-ug-bachelor-of-advanced-science-honours--bh-advsci/">Advanced Science</a>
                     <ul>
                         <li>Major in Computing</li>
                         <li>First Class Honours</li>
-                        <li><a href="https://www.curtin.edu.au/students/experience/vice-chancellors-list/">Vice Chancellor's List</a></li>
+                        <li><a target="_blank" href="https://www.curtin.edu.au/students/experience/vice-chancellors-list/">Vice Chancellor's List</a></li>
                     </ul>
                 </li>
                 <li>
-                    <h6><strong><a href="https://kennedy.wa.edu.au/">Kennedy Baptist College</a></strong> <small>(2012&nbsp;&#8209;&nbsp;2016)</small></h6>
-                    <a href="https://www.education.wa.edu.au/career-development/wace">Western Australian Certificate of Education</a> (WACE)
+                    <h6><strong><a target="_blank" href="https://kennedy.wa.edu.au/">Kennedy Baptist College</a></strong> <small>(2012&nbsp;&#8209;&nbsp;2016)</small></h6>
+                    <a target="_blank" href="https://www.education.wa.edu.au/career-development/wace">Western Australian Certificate of Education</a> (WACE)
                     <ul>
-                        <li>Engineers&nbsp;Australia <a href="https://www.engineersaustralia.org.au/about-us/excellence-awards-program">Certificate&nbsp;of&nbsp;Excellence</a> for&nbsp;Science&nbsp;and&nbsp;Mathematics</a></li>
+                        <li>Engineers&nbsp;Australia <a target="_blank" href="https://www.engineersaustralia.org.au/about-us/excellence-awards-program">Certificate&nbsp;of&nbsp;Excellence</a> for&nbsp;Science&nbsp;and&nbsp;Mathematics</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
     </div>
+    
     <div class="card">
-        <div style="max-width: 475px;">
-            <h2 style="text-align: center;">Employment</h2>
+        <div class="card-header">
+            <h2>Employment</h2>
+        </div>
+        <div class="card-body">
             <ul>
                 <li>
-                    <h6><strong><a href="https://netfabric.ai/">NetFabric</a></strong> <small>(2025&nbsp;&#8209;&nbsp;Present)</small></h6>
+                    <h6><strong><a target="_blank" href="https://netfabric.ai/">NetFabric</a></strong> <small>(2025&nbsp;&#8209;&nbsp;Present)</small></h6>
                     Software&nbsp;Engineer
                     <ul>
-                        <li>NetFabric is a startup in Zürich, developing machine learning for network <a href="https://www.youtube.com/watch?v=dBVn-X6RTFE">observability</a> and <a href="https://www.youtube.com/watch?v=TQ0HDkgwhEU">optimisation</a>.</li>
+                        <li>NetFabric is a startup in Zürich, developing machine learning for network <a target="_blank" href="https://www.youtube.com/watch?v=dBVn-X6RTFE">observability</a> and <a target="_blank" href="https://www.youtube.com/watch?v=TQ0HDkgwhEU">optimisation</a>.</li>
                         <li>I'm very excited to be starting a new position in October!</li>
                     </ul>
                 </li>
                 <li>
-                    <h6><strong><a href="https://www.immersivetechnologies.com/">Immersive Technologies</a></strong> <small>(2022)</small></h6>
+                    <h6><strong><a target="_blank" href="https://www.immersivetechnologies.com/">Immersive Technologies</a></strong> <small>(2022)</small></h6>
                     Software&nbsp;Engineer <small>(Full&nbsp;Stack)</small>
                     <ul>
-                        <li>Immersive makes <a href="https://www.immersivetechnologies.com/products/Simulators.htm">simulators</a> for training staff on the safe and efficient use of mining equipment.</li>
+                        <li>Immersive makes <a target="_blank" href="https://www.immersivetechnologies.com/products/Simulators.htm">simulators</a> for training staff on the safe and efficient use of mining equipment.</li>
                         <li>I did data processing and lesson implementation.</li>
                     </ul>
                 </li>
                 <li>
-                    <h6><strong><a href="https://tinos.pizza/">Tino's Pizza</a></strong> <small>(2020&nbsp;&#8209;&nbsp;2022)</small></h6>
+                    <h6><strong><a target="_blank" href="https://tinos.pizza/">Tino's Pizza</a></strong> <small>(2020&nbsp;&#8209;&nbsp;2022)</small></h6>
                     Manager
                     <ul>
                         <li>Perth's best upstart Pizzeria!</li>
-                        <li>(The <a href="https://www.pizzablab.com/learning-and-resources/fermentation/pizza-dough-fermentation-basics/">secret</a> to perfect dough.)</li>
+                        <li>(The <a target="_blank" href="https://www.pizzablab.com/learning-and-resources/fermentation/pizza-dough-fermentation-basics/">secret</a> to perfect dough.)</li>
                     </ul>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h2>Languages</h2>
+        </div>
+        <div class="card-body">
+            <ul>
+                <li>
+                    <h6><strong>Human Languages</strong></h6>
+                    <ul>
+                        <li>English (Native)</li>
+                        <li>German (<a target="_blank" href="https://www.coe.int/en/web/common-european-framework-reference-languages/table-1-cefr-3.3-common-reference-levels-global-scale">B1</a> — <span style="font-size: 8pt;">aber besser jeden Tag!</span>)</li>
+                    </ul>
+                </li>
+                <li>
+                    <h6><strong>Machine Languages</strong></h6>
+                    <ul>
+                        <li>
+                            <a target="_blank" href="https://en.wikipedia.org/wiki/Java_virtual_machine">JVM</a> —
+                            <a target="_blank" href="https://www.scala-lang.org/">Scala</a> •
+                            <a target="_blank" href="https://kotlinlang.org/">Kotlin</a> •
+                            <a target="_blank" href="https://www.java.com/en/">Java</a>
+                        </li>
+                        <li>
+                            Systems —
+                            <a target="_blank" href="https://www.c-language.org/">C</a> •
+                            <a target="_blank" href="https://isocpp.org/">C++</a>
+                        </li>
+                        <li>
+                            Web —
+                            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML</a> •
+                            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JS</a> •
+                            <a target="_blank" href="https://www.typescriptlang.org/">TypeScript</a> •
+                            <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+                        </li>
+                        <li>
+                            Other —
+                            <a target="_blank" href="https://www.python.org/">Python</a> •
+                            <a target="_blank" href="https://dotnet.microsoft.com/en-us/languages/csharp">C#</a> •
+                            <a target="_blank" href="https://www.latex-project.org/">LaTeX</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            
         </div>
     </div>
 </div>

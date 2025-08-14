@@ -1,6 +1,21 @@
+:root {
+    @media (max-width: 900px) {
+        --footer-height: 50px;
+        --footer-padding: 10px 20px;
+        --footer-icon-spacing: 20px;
+    }
+
+    @media (min-width: 901px) {
+        --footer-height: 75px;
+        --footer-padding: 20px 60px;
+        --footer-icon-spacing: 10px;
+    }
+}
+
 body > footer {
 
-    background-color: var(--pico-card-border-color);
+    background-color: var(--header);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
     height: var(--footer-height);
     padding: var(--footer-padding);
     width: 100%;
@@ -22,24 +37,11 @@ body > footer {
     @media (min-width: 901px) {
         .copyright {
             display: inline-flex;
+            font-size: 12pt;
         }
         .social-links {
             float: right;
         }
-    }
-}
-
-:root {
-    @media (max-width: 900px) {
-        --footer-height: 50px;
-        --footer-padding: 10px 20px;
-        --footer-icon-spacing: 20px;
-    }
-
-    @media (min-width: 901px) {
-        --footer-height: 75px;
-        --footer-padding: 20px 60px;
-        --footer-icon-spacing: 10px;
     }
 }
 
@@ -50,4 +52,3 @@ body > footer {
 .icon:hover svg path {
     fill: var(--icon-hover);
 }
-

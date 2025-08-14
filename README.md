@@ -4,14 +4,12 @@ The source code for my [personal website](https://alecdorrington.com/).
 
 ## Local Execution
 
-**Windows Only**
-
 1. Install [Ruby](https://www.ruby-lang.org/en/), [Bundler](https://bundler.io/), and [Git](https://git-scm.com/).
 2. Clone the repository:
    ```bash
    git clone https://github.com/SgtSwagrid/SgtSwagrid.github.io
    ```
-4. Run `setup` (first time) then `run`.
+4. From the project directory, run `setup` (first time) then `run`.
 5. Open [localhost:4000](http://localhost:4000/) in your browser.
 
 ## Writing a New Post

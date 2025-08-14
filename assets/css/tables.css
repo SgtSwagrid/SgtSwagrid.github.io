@@ -25,7 +25,7 @@ li > ul > li {
 }
 
 :root {
-    @media (max-width: 1200px) {
+    @media (max-width: 1000px) {
         --table-margin: 0px;
         --table-indent: 20px;
         --row-margin: 15px;
@@ -35,7 +35,7 @@ li > ul > li {
         --inner-font-size: 14px;
     }
 
-    @media (min-width: 1201px) {
+    @media (min-width: 1001px) {
         --table-margin: 5px;
         --table-indent: 25px;
         --row-margin: 20px;
