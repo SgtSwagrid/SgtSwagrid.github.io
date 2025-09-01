@@ -22,12 +22,11 @@ The source code for my [personal website](https://alecdorrington.com/).
    layout: post
    title: "Title"
    date: YYYY-MM-DD HH:MM:SS -0000
-   categories: category1 category2
    author: Author's name
    excerpt: "A brief description"
    ---
    ```
-4. Write the content in [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+4. Write the content in [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax), with optional [LaTeX](https://www.latex-project.org/) equations.
 5. Commit and push.
 
 ## Deployment
@@ -38,3 +37,4 @@ This site is automatically deployed from the `main` branch.
 
 - [Jekyll](https://jekyllrb.com/) for static site generation.
 - [GitHub Pages](https://pages.github.com/) for hosting.
+- [MathJax](https://www.mathjax.org/) for in-browser LaTeX-style equations.

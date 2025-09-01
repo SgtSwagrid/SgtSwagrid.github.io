@@ -9,6 +9,7 @@ discord_username: sgtswagrid
 
 markdown: kramdown
 theme: minima
+future: true
 plugins:
   - jekyll-feed
 

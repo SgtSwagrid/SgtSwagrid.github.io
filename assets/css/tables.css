@@ -1,25 +1,25 @@
-ul {
+ul.layered {
     margin: var(--table-margin) 0;
     padding: 0 0 0 var(--table-indent);
 }
 
-li {
+ul.layered > li {
     margin: var(--row-margin) 0;
     padding-left: var(--row-ident);
     font-size: var(--outer-font-size);
 }
 
-li > h6 {
+ul.layered > li > h6 {
     margin-bottom: 0px;
     padding-bottom: 0px;
     font-size: var(--header-font-size);
 }
 
-li > ul {
+ul.layered > li > ul {
     margin: 10px 0 0 0;
 }
 
-li > ul > li {
+ul.layered > li > ul > li {
     margin: 0;
     font-size: var(--inner-font-size);
 }
