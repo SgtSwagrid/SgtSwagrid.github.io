@@ -3,23 +3,61 @@ layout: main
 title: Home
 ---
 
-<div class="grid">
-
-    <div>
-        <h2>Posts</h2>
-        {% if site.posts.size > 0 %}
-            <ul class="post-list">
+<div class="cards">
+    
+    <div class="card">
+        <div class="card-header">
+            <h2>About Me</h2>
+        </div>
+        <div class="card-body">
+            <small><p style="padding: 10px;">
+                Hey there, I'm Alec! I'm originally from Australia, but now I'm working in Zürich.
+                Somehow you've stumbled upon my personal website, which I may occasionally use to write about things that I find interesting.
+                My background is in theoretical computer science and mathematics, which means I've spent a lot of time studying algorithms; all with varying degrees of practicality.
+                In recent times, I've become especially interested in combinatorial optimisation.<br>
+                <img src="/assets/images/profile.png" style="width: 50%; display: block; margin-left: auto; margin-right: auto; margin-top: 15px; border-radius: 90px;"><br>
+                Otherwise, since I live in Switzerland, I naturally try to make the most of the plethora of mountain-oriented sporting activities available at my doorstep.
+                My German is still very much a work in progress, though.
+            </p></small>
+        </div>
+        <div class="card-footer" style="width: 100%;">
+            <a href="{{ '/resume' | relative_url }}">View CV &rarr;</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <div style="min-height: var(--card-header-min-height); place-content: center;">
+                <h2 >Recent Adventures</h2>
+            </div>
+            <div>
+                <iframe style="margin-bottom: 5px;" width="100%" height="160px" src="https://www.strava.com/athletes/36362287/activity-summary/aeffdb9542a5fb4f34bfe7f1869cd3482445fd3e"></iframe>
+                <iframe width="100%" height="454px" src="https://www.strava.com/clubs/1755492/latest-rides/bb53d29c356c06d36e74fce831549f7e43b81113?show_rides=true"></iframe>
+            </div>
+        </div>
+        <div class="card-footer" style="width: 100%;">
+            <a href="{{ '/adventures' | relative_url }}">View all adventures &rarr;</a>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-header">
+            <h2>Recent Posts</h2>
+        </div>
+        <div class="card-body">
+            <ul>
                 {% for post in site.posts limit:5 %}
                 <li>
-                    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-                    <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
+                    <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+                    <small><p class="post-meta">{{ post.date | date: "%e %B %Y" }}</p></small>
                     <p>{{ post.excerpt }}</p>
                 </li>
                 {% endfor %}
             </ul>
-            <p><a href="{{ '/posts' | relative_url }}">View all posts &rarr;</a></p>
-        {% else %}
-            <p>No posts yet. Check back soon!</p>
-        {% endif %}
+        </div>
+        <div class="card-footer">
+            <a href="{{ '/posts' | relative_url }}">View all posts &rarr;</a>
+        </div>
     </div>
+
 </div>

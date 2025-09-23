@@ -1,9 +1,15 @@
 h1 {
     margin: 10px 0;
+    @media (max-width: 800px) {
+        text-align: center;
+    }
 }
 
 h2 {
     margin: 10px 0;
+    @media (max-width: 800px) {
+        text-align: center;
+    }
 }
 
 h3 {
@@ -43,4 +49,8 @@ a {
         text-decoration: underline;
         color: var(--link-active);
     }
+}
+
+small {
+    line-height: 1.1;
 }

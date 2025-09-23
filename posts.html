@@ -1,20 +1,23 @@
 ---
 layout: main
-title: Blog
+title: Posts
 ---
 
-<h1>All Posts</h1>
-
-{% if site.posts.size > 0 %}
-    <ul class="post-list">
-        {% for post in site.posts %}
-        <li>
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-            <p class="post-meta">{{ post.date | date: "%B %d, %Y" }}</p>
-            <p>{{ post.excerpt }}</p>
-        </li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>No posts yet. Check back soon!</p>
-{% endif %}
+<div style="place-content: center; height: 100%;">
+    <div class="card">
+        <div class="card-header">
+            <h2>Posts</h2>
+        </div>
+        <div class="card-body">
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <h4><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h4>
+                    <small><p class="post-meta">{{ post.date | date: "%e %B %Y" }}</p></small>
+                    <p>{{ post.excerpt }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>

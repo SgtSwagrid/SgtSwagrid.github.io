@@ -1,10 +1,10 @@
 :root {
-    @media (max-width: 900px) {
+    @media (max-width: 800px) {
         --header-height: 50px;
     }
 
-    @media (min-width: 901px) {
-        --header-height: 100px;
+    @media (min-width: 801px) {
+        --header-height: 80px;
     }
 }
 
@@ -24,38 +24,38 @@ body > header {
 
     .logo {
 
-        @media (max-width: 900px) {
+        @media (max-width: 800px) {
             display: none;
         }
 
-        @media (min-width: 901px) {
+        @media (min-width: 801px) {
             float: left;
-            margin: 19px 0 0 60px;
+            margin: 5px 0 0 60px;
         }
 
         .title {
             color: var(--title);
-            font-size: 24pt;
+            font-size: 18pt;
             margin-bottom: 5px;
         }
 
         .subtitle {
             color: var(--subtitle);
-            font-size: 18px;
+            font-size: 14px;
         }
     }
 
     .navigation {
 
-        @media (max-width: 900px) {
+        @media (max-width: 800px) {
             margin-top: 10px;
             display: flex;
             justify-content: center; 
             align-items: center;
         }
 
-        @media (min-width: 901px) {
-            margin: 32px 60px 0 0;
+        @media (min-width: 801px) {
+            margin: 22px 60px 0 0;
             float: right;
         }
 

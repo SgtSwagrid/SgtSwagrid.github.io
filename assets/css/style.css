@@ -62,8 +62,14 @@ body {
                 align-items: center;
                 width: 100%;
                 min-width: 0;
+                max-width: var(--content-max-width);
                 padding: var(--content-padding);
             }
         }
     }
+}
+
+hr {
+    border-color: var(--navbar-active);
+    margin: 30px 0 20px 0;
 }
