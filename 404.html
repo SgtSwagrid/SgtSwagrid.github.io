@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<HTML lang="en">
+  <HEAD>
+    <TITLE>Page not found</TITLE>
+    <META charset="UTF-8">
+    <META name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Repositories are named in lower case, and each one's site is served beneath its name, so a
+         link from before a rename (alecdorrington.com/Hecate/...) is sent on to the lower-case one. -->
+    <SCRIPT>
+      const [, site, ...rest] = location.pathname.split("/");
+      if (site !== site.toLowerCase()) {
+        location.replace(["", site.toLowerCase(), ...rest].join("/") + location.search + location.hash);
+      }
+    </SCRIPT>
+  </HEAD>
+  <BODY style="height: 100vh">
+    <DIV align="center">
+      <H1>Page not found</H1>
+      <P>Please see <A href="https://github.com/SgtSwagrid">github.com/SgtSwagrid</A>.</P>
+    </DIV>
+  </BODY>
+</HTML>
